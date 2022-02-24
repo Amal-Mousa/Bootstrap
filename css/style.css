@@ -1,0 +1,381 @@
+html{
+    scroll-behavior: smooth;
+}
+@font-face{
+    font-family: helvaticaBold;
+    src: url('../fonts/helvetica-compressed-5871d14b6903a.otf');
+    font-family: helvaticaRegular;
+    src: url('../fonts/Helvetica.ttf');
+    font-family: proRegular;
+    src: url('../fonts/Acumin-regualr.otf');
+}
+:root{
+    --main-color:#f6f8f9;
+    --secondry-color:#FA6980;
+    --white-color:#fff; 
+    --light-color :rgba(246, 248, 249,1);
+    --gray-color:#A6ADB4;
+    --dark-color:#000;
+    --black-color:#202124;
+    --dark-gray:#343434;
+    --clock-color:#CBD0D3;
+    --footer-color:#343638;
+}
+img{
+    object-fit: cover;
+}
+.wrapper{
+    height:auto;
+    background-color:var(--main-color);
+    font-family:helvetica;
+    min-height: 200vh;
+}
+/* header start================================== */
+.nav-container{
+    min-height: 3rem;
+}
+.head-nav{
+    background-color: var(--main-color);
+}
+.nav-color{
+    color: rgba(52, 54, 56,50%);
+    margin-right: 5px;
+    font-weight: bold;
+}
+.nav-color-active{
+    color: var(--dark-gray);
+}
+.home-list{
+    background-color:var(--light-color);
+    border: 1px solid #707070;
+    width: 200px;
+    height: 200px;
+}
+.nav-color:hover{
+    color: var(--dark-gray);
+}
+.list-item:active{
+    background-color: var(--main-color);
+}
+.nav-img{
+    margin-left: 1.3rem;
+}
+.profile-img{
+    display: none;
+}
+/* header end==================================================*/
+/* section1 start==============================================*/
+.section1{
+    background-color:var(--white-color);
+    padding-top:0.5rem;
+    font-size: 12px;
+    background-color: var(--main-color);
+}
+.img-1{
+    position: relative;
+    object-fit: cover;
+}
+.content-img1{
+    position: absolute;
+    top: 23%;
+    left: 15%;
+    color: var(--white-color);
+    margin-right: 23%;
+}
+.sec1-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#fff;
+}
+.sec1-img-head,.sec1-img-hed2{
+    font-size: 2em;
+    font-weight: 600;
+}
+.sec1-img-par{
+    font-size: 1.333em;
+}
+.sec1-btn{
+    width: 8rem;
+    color: var(--white-color);
+    padding: 0.5rem;
+    background-color: var(--secondry-color);
+    border: none;
+    border-radius: 0.4rem;
+    font-size: .78rem;
+}
+.img-line{
+    background: var(--white-color);
+}
+.sec1-title{
+    font-size: 2em;
+    color: var(--black-color);
+    font-weight: 600;
+}
+.news1{
+    margin-bottom: 2rem;
+}
+.news1-head1,.news1-head2{
+    font-size: 1.333em;
+}
+.news1-head1{
+    color: var(--secondry-color);
+    font-weight: 600;
+}
+.news1-head2{
+    color: var(--black-color);
+    font-weight: 600;
+}
+.news1-par{
+    font-size: 1.333em;
+    color: var(--gray-color);
+    font-family: proRegular;
+}
+.news-time{
+    font-size: 1.1em;
+    color: var(--gray-color);
+}
+.right-side{
+    padding: 3rem 4rem 0 4rem;
+    background-color: var(--white-color);
+}
+.previous-icon{
+    font-size: .8rem;
+    color: var(--dark-color);
+    opacity: .5;
+    position: absolute;
+    top: .6rem;
+    left: 18rem;
+}
+.next-icon{
+    color: var(--dark-color);
+    font-size: .8rem;
+    position: absolute;
+    top: .6rem;
+    left: 1.5rem;
+}
+/* section1 end============================================ */
+/* section2 start========================================== */
+.section2{
+    background-color: var(--main-color);
+    min-height: 200px;
+    padding-top: 1rem;
+}
+.section2 h1{
+    font-family: Helvetica;
+    text-transform: uppercase;
+    margin-left: .7rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.container{
+    padding: 12px;
+}
+.my-card{
+    margin-bottom: .8rem;
+    transition: all 500ms linear;
+}
+.my-card:hover{
+    border-bottom: 2px solid var(--secondry-color) ;
+    transform: translateY(-6px);
+}
+
+.box h5{
+    color: var(--dark-color);
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: start;
+    font-family: Helvetica;
+    margin-bottom: 5px;
+    
+}
+.box p{
+    text-align:start;
+    color: var(--gray-color) ;
+    font-size: .8rem;
+    font-family:proRegular ;
+    margin-bottom: 5px;
+}
+.ago{
+    display: flex;
+    justify-content: start;
+}
+.ago h5 {
+    font-size: .8rem;
+    color: var(--gray-color) ;
+    font-weight: 700;
+    font-family: Helvetica;
+    margin-left: .6rem;
+    margin-top: .3rem;
+}
+.fa-clock{
+    width:1rem;
+    height: 1rem;
+    color: var(--clock-color);
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+.arrow button{
+    position: relative;
+    display: inline-block; 
+    margin-left: 1.4rem; 
+}
+.arrow span{
+    color: var(--dark-color);
+    font-size: .8rem;
+}
+/* section2 end============================= */
+/* section3 start============================ */
+.section3{
+    padding-top: 1rem;
+}
+.img-2{
+    position: relative;
+}
+.sec3-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+.content-img2{
+    position: absolute;
+    top: 30%;
+    color: var(--white-color);
+    padding: 0rem 1rem;
+}
+.img-3{
+    position: relative;
+}
+.city,.travel{
+    color: var(--white-color);
+    font-family: helvetica;
+    opacity: .7;
+    font-weight: bold;
+    position: absolute;
+}
+.city{
+    top: 1%;
+    left: 5%;
+}
+.travel{
+    bottom: 45%;
+    left: 4%;
+}
+.content-img3{
+    color: var(--white-color);
+    position: absolute;
+    bottom: 4%;
+    padding: 0 1rem;
+}
+.sec2-img-head{
+    font-size: 1.5rem;
+    font-family: helvetica;
+    font-weight: bold;
+}
+.sec2-img-par{
+    font-size: 1rem;
+}
+.clock-part{
+    font-size:1rem ;
+}
+.image1{
+    margin-bottom: 1.5rem;
+}
+.right-sidee{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main-card{
+    border: none;
+    background: none;
+}
+.body-card{
+    padding: 0.5rem 0 1rem 0;
+}
+.img-top{
+    min-height: 10rem;
+}
+.clock-part .fa-clock{
+    color: var(--gray-color);
+}
+.card-time span{
+    color: var(--gray-color);
+}
+.card-word{
+    text-decoration: underline;
+}
+/* section3 end============================= */
+/* footer start */
+.my-footer{
+    background-color: var(--footer-color);
+    padding: 50px;
+    height: 12.5rem;
+}
+.logoo{
+    width: 150px;
+    height: 30px;
+}
+.social span{
+    color: var(--white-color);
+}
+.tele{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5rem;
+}
+.add{
+    width: 260px;
+    height: 40px;
+    background-color:var(--footer-color) ;
+    border: 2px solid rgba(255, 255, 255, 10%);
+}
+.add::placeholder{
+    color: var(--clock-color);
+    font-family: Helvetica;
+    font-size: .8rem;
+    font-weight: bold;
+    opacity: 50%;
+}
+.p1{
+    color: var(--clock-color);
+    font-size: .6rem;
+    margin-left: 5rem;
+    margin-top: .6rem;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+.link{
+    color: var(--white-color);
+    display: block;
+    line-height: 1.5;
+    font-size: .8rem;
+}
+.fa-telegram-plane{
+    position: absolute;
+    right: 3rem;
+    margin-top: .7rem;
+    color: var(--white-color);
+}
+.fa-twitter,.fa-facebook-square,.fa-globe-americas{
+    margin-left: 1.5rem;
+
+}
+.fa-facebook-square:hover{
+    color:#255cff;
+}
+.fa-twitter:hover{
+    color: #40a3d1;
+}
+.fa-globe-americas:hover{
+    color: #6578d6;
+}
+.fa-instagram:hover{
+    color: rgba(180, 98, 98, 0.4);
+}
+.fa-telegram-plane:hover{
+    color: #364ec9;
+}
+/* footer end */
